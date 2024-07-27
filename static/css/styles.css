@@ -1,50 +1,54 @@
-/* styles.css */
+/* styles/main.css */
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: #1e1e1e; /* Dark theme */
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121; /* Dark theme */
     color: #e0e0e0; /* Light text color */
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
+.app-container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
 }
 
-.navbar-btn {
+.header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.mic-btn {
     background: none;
     border: none;
-    color: #ff5722; /* Neon accent color */
-    font-size: 24px;
     cursor: pointer;
-    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 10px;
+    transition: transform 0.2s ease;
 }
 
-.navbar-btn:hover {
-    color: #ff9800; /* Lighter neon color */
+.mic-btn:hover {
     transform: scale(1.1);
 }
 
-.control-panel {
+.mic-btn img {
+    width: 40px;
+}
+
+.command-panel {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 60px; /* Adjust based on navbar height */
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .control-btn {
-    background: #282828;
+    background: #333;
     color: #e0e0e0;
-    border: 2px solid #444;
+    border: 1px solid #555;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 18px;
@@ -57,7 +61,13 @@ body {
     color: #fff;
 }
 
-.output {
-    margin-top: 20px;
+.output-container {
+    background: #333;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.output-text {
     font-size: 18px;
+    margin: 0;
 }
